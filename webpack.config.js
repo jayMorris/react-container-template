@@ -15,7 +15,7 @@ const postCSSLoaderOptions = {
 } */
 
 module.exports = {
-	plugins: [new webpack.EnvironmentPlugin(['NODE_ENV', 'cool'])],
+	plugins: [new webpack.EnvironmentPlugin(['cool'])],
 	// plugins: [new BundleAnalyzerPlugin()],
 	watch: true,
 	// devtool: 'cheap-eval-source-map',

@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 
 function App(props) {
 	console.log(process.env.cool);
-	return <div>Helloh COOL jj</div>;
+	return <div>Helloh hmm jj</div>;
 }
 
 ReactDOM.render(
