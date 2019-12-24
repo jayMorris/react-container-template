@@ -16,6 +16,11 @@ module.exports = {
 	// plugins: [new BundleAnalyzerPlugin()],
 	mode: 'production',
 	entry: './src/index.tsx',
+	optimization: {
+		splitChunks: {
+			chunks: 'initial'
+		}
+	},
 	output: {
 		path: path.resolve(__dirname, 'public'),
 		filename: 'bundle.js'

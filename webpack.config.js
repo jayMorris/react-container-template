@@ -18,6 +18,11 @@ module.exports = {
 	plugins: [new webpack.EnvironmentPlugin(['cool'])],
 	// plugins: [new BundleAnalyzerPlugin()],
 	watch: true,
+	optimization: {
+		splitChunks: {
+			chunks: 'initial'
+		}
+	},
 	// devtool: 'cheap-eval-source-map',
 	mode: 'production',
 	entry: './src/index.tsx',
