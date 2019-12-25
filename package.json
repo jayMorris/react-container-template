@@ -1,40 +1,45 @@
 {
-	"name": "react-container-template",
-	"version": "0.1.0",
-	"dependencies": {
-		"antd": "3.26.4",
-		"dayjs": "1.8.18",
-		"react": "^16.9.0",
-		"react-dom": "^16.9.0"
-	},
-	"devDependencies": {
-		"@types/node": "13.1.0",
-		"@types/react": "latest",
-		"@types/react-dom": "latest",
-		"concurrently": "^5.0.2",
-		"live-server": "1.2.1",
-		"ts-loader": "6.2.1",
-		"typescript": "3.7.4",
-		"webpack": "4.41.4",
-		"webpack-cli": "3.3.10",
-		"webpack-dev-server": "3.10.1"
-	},
-	"main": "src/index.tsx",
-	"scripts": {
-		"build-prod": "webpack --config webpack.config.prod.js",
-		"build-watch": "webpack --config webpack.config.js",
-		"live-server": "live-server  -watch=/:public --mount=/:public --ignore=node_modules,src",
-		"dev": "concurrently  \"yarn build-watch\" \"yarn live-server\"",
-		"devOLDD": "webpack-dev-server --content-base public/"
-	},
-	"browserslist": {
-		"production": [">0.2%", "not dead", "not op_mini all"],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
-	"keywords": [],
-	"description": ""
+  "name": "react-container-template",
+  "version": "0.1.0",
+  "dependencies": {
+    "antd": "3.26.4",
+    "dayjs": "1.8.18",
+    "react": "^16.9.0",
+    "react-bootstrap": "1.0.0-beta.16",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "13.1.0",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "concurrently": "^5.0.2",
+    "live-server": "1.2.1",
+    "ts-loader": "6.2.1",
+    "typescript": "3.7.4",
+    "webpack": "4.41.4",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.10.1"
+  },
+  "main": "src/index.tsx",
+  "scripts": {
+    "build-prod": "webpack --config webpack.config.prod.js",
+    "build-watch": "webpack --config webpack.config.js",
+    "live-server": "live-server  -watch=/:public --mount=/:public --ignore=node_modules,src",
+    "dev": "concurrently  \"yarn build-watch\" \"yarn live-server\"",
+    "devOLDD": "webpack-dev-server --content-base public/"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [],
+  "description": ""
 }
