@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
 						}
 `;
 function App(props) {
-	console.log(process.env.cool);
+	console.log('oops', process.env.cool);
 	return (
 		<ThemeProvider
 			options={{
@@ -37,11 +37,9 @@ function App(props) {
 				textHintOnBackground: 'white',
 				textHintOnLight: 'white'
 			}}>
-			<div>
-				<GlobalStyle />
-				<Typography use="body1">hello</Typography>
-				<Button label="Button" />
-			</div>
+			<GlobalStyle />
+			<Typography use="body1">hello sure nice</Typography>
+			<Button label="Button" />
 		</ThemeProvider>
 	);
 }
