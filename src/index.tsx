@@ -38,7 +38,7 @@ function App(props) {
 				textHintOnLight: 'white'
 			}}>
 			<GlobalStyle />
-			<Typography use="body1">hello sure nice</Typography>
+			<Typography use="body1">hello wow nice</Typography>
 			<Button label="Button" />
 		</ThemeProvider>
 	);
